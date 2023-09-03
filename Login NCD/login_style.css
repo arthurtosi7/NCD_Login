@@ -34,6 +34,11 @@ body {
     border-radius: 8px;
 }
 
+#goodreads {
+    width: 90px;
+    margin-left: 50px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -41,6 +46,7 @@ form {
 
 h2 {
     margin-bottom: 20px;
+    margin-left: 5px;
     position: relative;
 }
 
@@ -48,7 +54,7 @@ h2::before {
     content: '';
     position: absolute;
     height: 4px;
-    width: 50px;
+    width: 25px;
     bottom: -4px;
     left: 0px;
     border-radius: 8px;
