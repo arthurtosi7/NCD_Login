@@ -68,11 +68,16 @@ h2::before {
 .local_enter input{
     outline: none;
     font-size: 14px;
-    color: rgba(80, 60, 0, 0.7);
+    color: rgba(80, 60, 0, 0.6);
     background: #FFF4CD;
     width: 100%;
     padding: 5px;
     border-radius: 4px;
+}
+
+.local_enter input:focus{
+    background: #FFF5EA;
+    color: rgba(80, 60, 0, 1);
 }
 
 .local_enter input::placeholder{
