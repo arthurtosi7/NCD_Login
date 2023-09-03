@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    background: url("background.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.image {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    min-height: 250px;
+    min-width: 250px;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    bottom: -4px;
+    left: 0px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #C5690C, #C1A991);
+}
+
+.local_enter {
+    position: relative;
+}
+
+.local_enter input{
+    outline: none;
+    font-size: 14px;
+    color: rgba(80, 60, 0, 0.7);
+    background: #FFF4CD;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.local_enter input::placeholder{
+    color: rgba(0, 0, 0, 0.3); 
+}
+
+.local_enter #username {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 5px 0px;
+    background: linear-gradient(45deg, #C5690C, #C0905F);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg,#C0905F, #C5690C);
+}
+
+
+.other{
+    padding: 8px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.other #continue {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 6px;
+}
+
+.google-login {
+    background: #FF8064;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+    padding: 5px 10px;
+}
+
+.google-login:hover {
+    letter-spacing: 0.3px;
+    background: #FE6449;
+}
+
+.logo {
+    width: 20px;
+    height: auto;
+    vertical-align: text-top;
+}
